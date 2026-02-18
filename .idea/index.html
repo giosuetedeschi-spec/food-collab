@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Collaborativa</title>
+  <style>
+    /* Reset totale per evitare margini indesiderati */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      background-color: #000; /* Colore delle linee di divisione */
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Due colonne uguali */
+      grid-template-rows: 1fr 1fr;    /* Due righe uguali */
+      height: 100vh;
+      width: 100vw;
+      gap: 2px; /* Spessore della linea tra i quadranti */
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      background: white; /* Sfondo di default se il file non carica */
+    }
+  </style>
+</head>
+<body>
+<div class="grid-container">
+  <iframe src="girelle.html"></iframe>
+  <iframe src="anna.html"></iframe>
+  <iframe src="simone.html"></iframe>
+  <iframe src="bobu.html"></iframe>
+</div>
+</body>
+</html>
